@@ -1,5 +1,6 @@
 package Num2.n1;
 
+
 import java.util.Scanner;
 
 public class TestAuthor{
