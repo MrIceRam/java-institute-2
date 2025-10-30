@@ -18,9 +18,9 @@ class Student {
 
 class StudentView {
     public void printStudentDetails(String studentName, String studentRollNo) {
-        System.out.println("Student: ");
-        System.out.println("Name: " + studentName);
-        System.out.println("Roll No: " + studentRollNo);
+        System.out.println("Студент: ");
+        System.out.println("Имя: " + studentName);
+        System.out.println("номер: " + studentRollNo);
     }
 }
 
@@ -55,13 +55,13 @@ public class MVCExample {
         StudentView view = new StudentView(); // Создаем представление
         StudentController controller = new StudentController(model, view);
         controller.updateView();
-        controller.setStudentName("John");// Изменяем данные модели
-        System.out.println("\nAfter updating, Student Details are as follows:");
+        controller.setStudentName("Влад");// Изменяем данные модели
+        System.out.println("\nПосле обновления данные:");
         controller.updateView();
     }
     private static Student retrieveStudentFromDatabase() {
         Student student = new Student();
-        student.setName("Robert");
+        student.setName("Вася");
         student.setRollNo("10");
         return student;
     }
