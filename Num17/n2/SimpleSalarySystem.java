@@ -69,7 +69,6 @@ public class SimpleSalarySystem {
         calculator.showEmployeeInfo(employee1);
         System.out.println("СОТРУДНИК 2:");
         calculator.showEmployeeInfo(employee2);
-        
 
         System.out.println("\n*** После изменений ***");// Изменяем данные и показываем обновленные результаты
 
@@ -80,8 +79,7 @@ public class SimpleSalarySystem {
         System.out.println("СОТРУДНИК 1 (после изменений):");
         calculator.showEmployeeInfo(employee1);
         
-        // Повышаем ставку второму сотруднику
-        employee2.setRate(650);
+        employee2.setRate(650);// Повышаем ставку второму сотруднику
         
         System.out.println("СОТРУДНИК 2 (после повышения ставки):");
         calculator.showEmployeeInfo(employee2);
